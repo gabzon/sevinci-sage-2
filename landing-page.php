@@ -37,10 +37,10 @@
         <?php get_template_part('templates/toolbox-filters'); ?>
         <?php get_template_part('templates/landing/toolbox'); ?>
     </div>
-    <div class="ui tab segment" data-tab="second">
-
+    <div class="ui tab basic segment" data-tab="second">
+        <?php get_template_part('templates/landing/guides'); ?>
     </div>
-    <div class="ui tab segment" data-tab="third">
+    <div class="ui tab basic segment" data-tab="third">
 
     </div>
 </div>
