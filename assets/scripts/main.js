@@ -10,9 +10,7 @@
 * always reference jQuery with $, even when in .noConflict() mode.
 * ======================================================================== */
 
-(function isot($){
-    $(document).ready(function(){
-
+function isot($){
         var $container = $('.isotope').imagesLoaded(function() {
             $container.isotope({
                 itemSelector: '.isotope-item'
@@ -46,9 +44,7 @@
                 $( this ).addClass('active');
             });
         });
-
-    });
-})(jQuery);
+}
 
 (function($) {
 
@@ -83,7 +79,7 @@
         },
         'toolbox':{
             init: function() {
-                isot();
+                isot($);
             }
         },
         // About us page, note the change from about-us to about_us.

@@ -1,27 +1,27 @@
 <?php
 /**
- * Sage includes
- *
- * The $sage_includes array determines the code library included in your theme.
- * Add or remove files to the array as needed. Supports child theme overrides.
- *
- * Please note that missing files will produce a fatal error.
- *
- * @link https://github.com/roots/sage/pull/1042
- */
+* Sage includes
+*
+* The $sage_includes array determines the code library included in your theme.
+* Add or remove files to the array as needed. Supports child theme overrides.
+*
+* Please note that missing files will produce a fatal error.
+*
+* @link https://github.com/roots/sage/pull/1042
+*/
 $sage_includes = [
-  'lib/utils.php',                 // Utility functions
-  'lib/init.php',                  // Initial theme setup and constants
-  'lib/wrapper.php',               // Theme wrapper class
-  'lib/conditional-tag-check.php', // ConditionalTagCheck class
-  'lib/config.php',                // Configuration
-  'lib/assets.php',                // Scripts and stylesheets
-  'lib/titles.php',                // Page titles
-  'lib/extras.php',                // Custom functions
-  'piklist/post-type',                 // Custom post type
-  'piklist/taxonomy',                  // Custom taxonomies
-  'piklist/brain/brain.php',           // Brain functions
-  'piklist/sources/source.php'         // Source functions
+    'lib/utils.php',                 // Utility functions
+    'lib/init.php',                  // Initial theme setup and constants
+    'lib/wrapper.php',               // Theme wrapper class
+    'lib/conditional-tag-check.php', // ConditionalTagCheck class
+    'lib/config.php',                // Configuration
+    'lib/assets.php',                // Scripts and stylesheets
+    'lib/titles.php',                // Page titles
+    'lib/extras.php',                // Custom functions
+    'piklist/taxonomy',                  // Custom taxonomies
+    'piklist/post-type',                 // Custom post type
+    'piklist/brain/brain.php',           // Brain functions
+    'piklist/sources/source.php'         // Source functions
 ];
 
 foreach ($sage_includes as $file) {
@@ -87,9 +87,9 @@ function languages_list_footer(){
 //------------------------------------------------------------------------------
 //------------------------------------------------------------------------------
 function cc_mime_types($mimes) {
-  $mimes['svg'] = 'image/svg+xml';
-  $mimes['svgz'] = 'image/svg+xml';
-  return $mimes;
+    $mimes['svg'] = 'image/svg+xml';
+    $mimes['svgz'] = 'image/svg+xml';
+    return $mimes;
 }
 add_filter('upload_mimes', 'cc_mime_types');
 //------------------------------------------------------------------------------

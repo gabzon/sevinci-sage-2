@@ -35,7 +35,7 @@
     </div>
     <div class="ui tab basic segment active" data-tab="first">
         <?php get_template_part('templates/toolbox-filters'); ?>
-        <?php get_template_part('templates/toolbox-tools'); ?>
+        <?php get_template_part('templates/landing/toolbox'); ?>
     </div>
     <div class="ui tab segment" data-tab="second">
 
