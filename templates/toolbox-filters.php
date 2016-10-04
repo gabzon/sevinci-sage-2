@@ -4,7 +4,7 @@
     <div class="ui-group ui padded grid" id="filter-branch">
         <h4><?php _e('By category','roots'); ?></h4>
         <div class="button-group js-radio-button-group" role="group" data-filter-group="branch">
-            <button class="ui basic button active filter-button" data-filter="*"><?php _e('Show all','sage'); ?></button>
+            <button class="ui basic button active filter-button" data-filter=""><?php _e('Show all','sage'); ?></button>
             <?php foreach ($branches as $branch): ?>
                 <button class="ui basic button filter-button" data-filter="<?php echo "." . $branch->slug; ?>">
                     <?php echo $branch->name ?>
@@ -26,7 +26,7 @@
     <div class="ui-group ui padded grid" id="filter-phase">
         <h4><?php _e('By phase','roots'); ?></h4>
         <div class="button-group js-radio-button-group" role="group" data-filter-group="phase">
-            <button class="ui basic button active filter-button" data-filter="*"><?php _e('Show all','sage'); ?></button>
+            <button class="ui basic button active filter-button" data-filter=""><?php _e('Show all','sage'); ?></button>
             <?php foreach ($phases as $phase): ?>
                 <button type="button" class="ui basic button filter-button" data-filter="<?php echo ".".$phase->post_name; ?>">
                     <?php echo $phase->post_title ?>

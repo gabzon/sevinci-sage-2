@@ -32,6 +32,10 @@ function isot($){
             for ( var prop in filters ) {
                 filterValue += filters[ prop ];
             }
+            if (!filterValue){
+                filterValue='*';
+            }
+                
             // set filter for Isotope
             $container.isotope({ filter: filterValue });
         });
