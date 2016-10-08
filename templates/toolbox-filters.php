@@ -1,6 +1,7 @@
 <div id="filters" class="ui bottom horizontal sidebar menu">
     <!-- BY BRANCH ***************************************************** -->
-    <?php $branches = get_terms(array( 'name' => 'branch')); ?>
+    <?php $branches = get_terms(array( 'taxonomy' => 'branch')); ?>
+
     <div class="ui-group ui padded grid" id="filter-branch">
         <h4><?php _e('By category','roots'); ?></h4>
         <div class="button-group js-radio-button-group" role="group" data-filter-group="branch">

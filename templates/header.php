@@ -6,7 +6,7 @@ $menu_name = 'primary_navigation';
     <?= '<div style="min-height: 28px;"></div>'; ?>
 <?php endif; ?>
 <div class="ui borderless fixed top menu" id="top-menu">
-  <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>" rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" style="margin:10px 0 0 10px; text-transform:uppercase; font-weight:bold; color:#5829BB">
+  <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>" rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" style="margin:10px 0 0 20px; text-transform:uppercase; font-weight:bold; color:#5829BB">
     <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
       <img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' class="img-responsive" style="max-width:150px;margin-top:-10px">
     <?php else : ?>

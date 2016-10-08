@@ -4,9 +4,8 @@
 */
 ?>
 
-
 <div id="landing-search" class="ui basic inverted segment">
-    <br><br><br>
+    <br><br><br><br>
     <div class="ui centered grid">
         <div class="seven wide column">
             <h1 class="ui header inverted centered">
@@ -23,7 +22,7 @@
             </form>
         </div>
     </div>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br>
 </div>
 
 <div class="ui container aligned center">
