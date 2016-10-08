@@ -11,7 +11,8 @@
     <?php
     $brain = get_post_meta($post->ID, 'tool_brain_side',true);
     $version = get_post_meta($post->ID, 'tool_version_group',true);
-    $last_version = end($version['tool_version_file']);
+    $version_last_item = end($version);
+    $last_version = $version_last_item['tool_version_file'];
     $videos = get_post_meta($post->ID,'tool_video');
     $quotes_group = get_post_meta($post->ID,'tool_quote_group');
     $quotes = $quotes_group[0];
@@ -36,7 +37,7 @@
             <?php get_template_part('templates/tool/tool-tips'); ?>
 
             <?php get_template_part('templates/tool/tool-question'); ?>
-            
+
             <?php get_template_part('templates/tool/tool-tags'); ?>
 
             <?php get_template_part('templates/tool/tool-brain.php'); ?>

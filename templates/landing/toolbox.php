@@ -33,8 +33,8 @@ $tools = get_posts( array(
 
 function get_tool_last_version_attachment($id){
     $version = get_post_meta($id, 'tool_version_group',true);
-    $last_version = end($version['tool_version_file']);
-    return $last_version;
+    $last_version = end($version);
+    return $last_version['tool_version_file'];
 }
 
 function display_tools($tools){
