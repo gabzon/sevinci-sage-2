@@ -5,8 +5,8 @@
 ?>
 
 
-<div class="ui basic red inverted segment">
-    <br>
+<div id="landing-search" class="ui basic inverted segment">
+    <br><br><br>
     <div class="ui centered grid">
         <div class="seven wide column">
             <h1 class="ui header inverted centered">
@@ -23,12 +23,11 @@
             </form>
         </div>
     </div>
-    <br>
-    <br>
+    <br><br><br><br><br>
 </div>
 
 <div class="ui container aligned center">
-    <div class="ui multitabs pointing fluid three item red secondary menu">
+    <div class="ui multitabs pointing fluid three item violet secondary menu">
       <a class="item active" data-tab="first"><?php _e('TOOLS','sage'); ?></a>
       <a class="item" data-tab="second"><?php _e('GUIDES','sage'); ?></a>
       <a class="item" data-tab="third"><?php _e('LEADERSHIP','sage'); ?></a>

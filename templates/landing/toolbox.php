@@ -97,7 +97,7 @@ function display_tools($tools){
                 </div>
                 <div class="extra content">
                     <?php if(!empty($download)): ?>
-                        <a class="ui red button" href="<?php echo wp_get_attachment_url($download[0]); ?>" target="_blank">
+                        <a class="ui violet basic button" href="<?php echo wp_get_attachment_url($download[0]); ?>" target="_blank">
                             <i class="download icon"></i>
                             <?php _e('Download','sage'); ?>
                         </a>
