@@ -26,7 +26,7 @@ $social_media = array(
 <footer class="ui basic vertical segment" style="background:#eee">
     <br>
     <div class="ui container">
-        <div class="ui grid">
+        <div class="ui grid stackable">
             <div class="four wide column">
               <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>" rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" style="text-transform:uppercase; font-weight:bold; color:#5829BB">
                 <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
@@ -51,7 +51,7 @@ $social_media = array(
             <div class="four wide column">
                 <h4><?php _e('Contact','sage') ?></h4>
                 <a href="mailto:info@sevinci.com">
-                    <div class="ui circular youtube icon button">
+                    <div class="ui circular violet icon button">
                         <i class="mail icon"></i>
                     </div>
                 </a>
