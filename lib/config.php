@@ -57,7 +57,7 @@ function display_sidebar() {
         ['is_page_template', 'template-custom.php'],
         ['is_page_template', 'get-started.php'],
         ['is_page_template', 'search.php'],
-        ['is_page_template', 'toolbox.php'],
+        ['is_page_template', 'toolbox.php'],        
         ['is_singular', ['tool']],
       ]
     );

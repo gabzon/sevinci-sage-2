@@ -25,7 +25,7 @@ $menu_name = 'primary_navigation';
         </form>
       </div>
     <?php endif; ?>
-    <div class="item">
+    <!-- <div class="item">
       <?php  if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) :
         $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
         $menu_items = wp_get_nav_menu_items($menu->term_id);
@@ -38,9 +38,9 @@ $menu_name = 'primary_navigation';
         endforeach;
       endif;
       ?>
-    </div>
-    <div class="item">
-      <?php languages_list_footer(); ?>
-    </div>
+    </div> -->
+    <!-- <div class="item">
+      <?php //languages_list_footer(); ?>
+    </div> -->
   </div>
 </div>
