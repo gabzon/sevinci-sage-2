@@ -44,14 +44,12 @@
                 <h4><i class="paste icon"></i> <?php _e('Versions','roots'); ?></h4>
                 <hr class="sevinci-hr">
                 <?php
-                   $version_count = count($version['tool_version_file']);
-                   for ($i=0; $i < $version_count; $i++) {
-                      ?>
-                      <a href="<?php echo wp_get_attachment_url($version['tool_version_file'][$i][0]); ?>" target="_blank">
-                         <?php _e('Version','roots'); echo " "  . $version['tool_version_number'][$i]; ?>
-                      </a>
-                      <?php echo ": " . $version['tool_version_date'][$i] . "<br> "; ?>
-                      <?php
+                   foreach ($version as $v) {?>
+                     <a href="<?php echo wp_get_attachment_url($v['tool_version_file'][0]); ?>" target="_blank">
+                        <?php _e('Version','roots'); echo " "  . $v['tool_version_number']; ?>
+                     </a>
+                     <?php echo ": " . $v['tool_version_date'] . "<br> "; ?>
+                    <?php
                    }
                 ?>
             </div>

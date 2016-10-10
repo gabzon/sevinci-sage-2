@@ -10,7 +10,7 @@
             </div>
             <div class="four wide column">
                 <h2 class="ui center aligned icon header">
-                    <i class="circular inverted red clock icon"></i>
+                    <i class="circular inverted violet clock icon"></i>
                     <div class="sub header">
                         <?php echo $time['tool_duration_value'][0]; ?>
                         <?php " " ?>
@@ -20,7 +20,7 @@
             </div>
             <div class="four wide column">
                 <h2 class="ui center aligned icon header">
-                    <i class="circular inverted red group icon"></i>
+                    <i class="circular inverted violet group icon"></i>
                     <div class="sub header">
                         <?php echo get_post_meta($post->ID, 'tool_participants',true); ?>
                         <?php _e('Participants', 'roots'); ?>

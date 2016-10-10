@@ -28,9 +28,13 @@ $social_media = array(
     <div class="ui container">
         <div class="ui grid">
             <div class="four wide column">
-                <a href="<?php echo site_url(); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/assets/images/logo/sevinci-logo-red-full.svg" alt="" width="150px"/>
-                </a>
+              <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>" rel="home" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" style="text-transform:uppercase; font-weight:bold; color:#5829BB">
+                <?php if ( get_theme_mod( 'themeslug_logo' ) ) : ?>
+                  <img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' class="img-responsive" style="max-width:150px;margin-top:-10px">
+                <?php else : ?>
+                  <?php echo bloginfo('name'); ?>
+                <?php endif; ?>
+              </a>
                 <br>
                 <br>
                 <?php _e('A business toolbox to help people direct and manage business projects efficiently','sage'); ?>
