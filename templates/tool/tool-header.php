@@ -1,3 +1,9 @@
+<?php
+$version = get_post_meta($post->ID, 'tool_version_group',true);
+$version_last_item = end($version);
+$last_version = $version_last_item['tool_version_file'][0];
+?>
+
 <div class="ui basic vertical segment" style="background:#eee">
   <br>
   <div class="ui container">
@@ -15,7 +21,7 @@
         <br>
         <h1><?php the_title(); ?></h1>
         <?php the_excerpt(); ?>
-        <a href="<?php echo wp_get_attachment_url($last_version[0]); ?>" class="ui large violet button" id="download-tool" target="_blank">
+        <a href="<?= wp_get_attachment_url($last_version); ?>" class="ui large violet button" id="download-tool" target="_blank">
           <i class="large download icon"></i>
           <?php _e('Download','sage') ?>
         </a>
@@ -27,7 +33,7 @@
 </div>
 <div class="ui basic vertical segment center aligned" style="background-color:#ccc">
   <div class="ui container">
-    <div class="social">      
+    <div class="social">
       <?php
       if ( function_exists( 'sharing_display' ) ) {
         sharing_display( '', true );

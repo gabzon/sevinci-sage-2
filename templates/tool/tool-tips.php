@@ -12,9 +12,9 @@
                 <h2 class="ui center aligned icon header">
                     <i class="circular inverted violet clock icon"></i>
                     <div class="sub header">
-                        <?php echo $time['tool_duration_value'][0]; ?>
+                        <?php echo $time['tool_duration_value']; ?>
                         <?php " " ?>
-                        <?php echo $time['tool_duration_type'][0];  ?>
+                        <?php echo $time['tool_duration_type'];  ?>
                     </div>
                 </h2>
             </div>
