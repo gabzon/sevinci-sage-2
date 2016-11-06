@@ -35,7 +35,7 @@ function isot($){
             if (!filterValue){
                 filterValue='*';
             }
-                
+
             // set filter for Isotope
             $container.isotope({ filter: filterValue });
         });
@@ -67,6 +67,7 @@ function isot($){
                 $('#toolbox-filter').on('click', function(){
                     $('#filters.bottom.sidebar').sidebar('toggle');
                 });
+                isot($);
             },
             finalize: function() {
                 // JavaScript to be fired on all pages, after page specific JS is fired
